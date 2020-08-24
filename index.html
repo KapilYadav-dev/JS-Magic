@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" ,user-scalable=no>
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Animato</title>
 </head>
-<body>
-    
+
+<body onload="CloudMove() , BallonMove()">
+    <section id="main">
+        <div id="cloud"></div>
+        <div id="cloud-left"></div>
+        <div id="ballon">
+            <img  src="/images/ballon.svg">
+        </div>
+    </section>
+    <script src="/js/scripts.js"></script>
 </body>
+
 </html>
