@@ -1,6 +1,5 @@
 body {
     background-image: url(/images/back.png);
-    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -8,7 +7,6 @@ body {
     background-attachment: fixed;
     overflow: hidden;
 }
-
 #cloud {
     position: absolute;
     height: 200px;
@@ -23,4 +21,15 @@ body {
 #ballon img {
     width: 150px;
     height: 150px;
+}
+#cloud-right {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: -10;
+    background-image: url(/images/cloud.svg);
+}
+#ufo img {
+    width: 400px;
+    height: 400px;
 }

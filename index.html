@@ -8,15 +8,20 @@
     <title>Animato</title>
 </head>
 
-<body onload="CloudMove() , BallonMove()">
+<body>
     <section id="main">
         <div id="cloud"></div>
-        <div id="cloud-left"></div>
+        <div id="cloud-right"></div>
         <div id="ballon">
-            <img  src="/images/ballon.svg">
+            <img  id="img" src="/images/ballon.svg">
         </div>
     </section>
     <script src="/js/scripts.js"></script>
+    <script >
+        Move("cloud",50);
+        Move("cloud-right",35);
+        Move("ballon",20);
+    </script>
 </body>
 
 </html>

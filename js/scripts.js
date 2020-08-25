@@ -1,34 +1,32 @@
-function CloudMove() {
-    var elem = document.getElementById("cloud");
-    var pos = 0;
+function Move(elem_id, time) {
+    var elem = document.getElementById(elem_id);
+    var pos = -300;
     var width = window.innerWidth;
-    var obj_width = elem.offsetWidth;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, time);
+
     function frame() {
-        if (pos == width - obj_width) {
-            pos = 0;
+        if (pos == width) {
+            pos = -300;
         } else {
             pos++;
-            elem.style.left = pos + 'px';
+            if (elem_id == "cloud") {
+                elem.style.left = pos + 'px';
+            }
+            else if (elem_id == "cloud-right") {
+                elem.style.right = pos + 'px';
+
+            }
+            else if (elem_id == "ballon") {
+                elem.style.left = pos + 'px';
+                BallonFn(elem , width , pos);
+            }
         }
     }
 }
-
-function BallonMove() {
-    var elem = document.getElementById("ballon");
-    var pos = 0;
-    var width = window.innerWidth;
-    var obj_width = elem.offsetWidth;
-    var id = setInterval(frame, 20);
-    var Angle = "0";
-    function frame() {
-        if (pos == width - obj_width) {
-            pos = 0;
-        } else {
-            pos++;
-            elem.style.transform = "rotate(" + Angle + "deg)";
-            elem.style.left = pos + 'px';
-        }
+function BallonFn(elem ,width ,pos) {
+    if (pos==width/2)
+    {
+        
     }
 }
 
