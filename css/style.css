@@ -33,3 +33,6 @@ body {
     width: 400px;
     height: 400px;
 }
+#firework {
+    background-image: url(/images/firework.gif);
+}
